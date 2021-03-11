@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptTutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+Урок 1
+    <label> <input type="checkbox" id="One" onchange="fun1()"> Пример checkbox </label> 
+
+  <label><input type="radio" name="r1" value="5"> 0
+   <input type="radio" name="r1" value="53"> 1
+   <input type="radio" name="r1" value="535"> 2
+   <button onclick="fun2()">Проверить какой из элементов выбран</button> 
+</label> 
+
+
+Урок 2 
+    <select id="mySelect" onchange="fun3()">
+       <option value="">Apple</option>
+       <option value="">Orange</option>
+       <option value="">Pineapple</option>
+       <option value="">Banana</option>
+   </select> 
+
+   <label>
+       <input type="range" min="0" max="100" step="2" oninput="fun4()" id="r2">
+       <input type="text" id="i1"> 
+   </label>
+
+   <label>
+       <input type="range" min="0" max="100" step="2" oninput="fun5()" id="r3">
+       <div id="test"></div>
+    </label>
+
+Урок 3
+     <div>
+         <div class="block1">
+             <p>Верхний левый угол:
+                <input type="range"  id="rtl" min="0" max="100" value="0" oninput="fun6()">
+                <input type="text" id="ttl" value="0"> 
+             </p>
+             <p>Верхний првый угол:
+                <input type="range"  id="rtr" min="0" max="100" value="0" oninput="fun6()">
+                <input type="text" id="ttr" value="0"> 
+             </p>
+             <p>нижний правый угол:
+                <input type="range"  id="rbr" min="0" max="100" value="0" oninput="fun6()">
+                <input type="text" id="tbr" value="0"> 
+             </p>
+             <p>нижний левый угол:
+                <input type="range"  id="rbl" min="0" max="100" value="0" oninput="fun6()">
+                <input type="text" id="tbl" value="0"> 
+             </p>
+         </div>
+         <div id="block"></div>
+     </div>
+
+     Урок 4
+
+     <div id="nav">
+         <div class="menu-item">
+             Меню 1
+             <div class="submenu">
+                 Подменю
+             </div>
+         </div>
+         <div class="menu-item">
+            Меню 2
+            <div class="submenu">
+                Подменю
+            </div>
+        </div>
+        <div class="menu-item">
+            Меню 3
+            <div class="submenu">
+                Подменю
+            </div>
+        </div>
+     </div>
+    Урок 5
+    <div id="tabs">
+        <div class="tab whiteborder">Tab 1</div>
+        <div class="tab">Tab 2</div>
+        <div class="tab">Tab 3</div>
+        <div class="tabContent">1</div>
+        <div class="tabContent">2</div>
+        <div class="tabContent">3</div>
+    </div>
+    Урок 6
+    <button id="myBtn">Open Modal</button>
+
+    
+    <div id="myModal" class="modal">
+    
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Модальное окно!</p>
+      </div>
+    
+    </div>
+    Урок 7
+    <button onclick="myMove()">Animation</button>
+    <div id ="myContainer">
+        <div id ="myAnimation"></div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
