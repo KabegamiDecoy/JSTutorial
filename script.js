@@ -188,3 +188,98 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className+= " active";
 }
+// Урок 9
+function myFunction () {
+    var input, filter, ul, li,a,i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    for (i=0; i<li.length; i++){
+        a =li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        }
+        else{
+            li[i].style.display = "none";
+        }
+    }
+}
+//Урок 10
+function plus() {
+    var num1, num2, result;
+
+    num1 = document.getElementById('n1').value;
+    num1 = parseInt(num1);
+
+    num2 = document.getElementById('n2').value;
+    num2 = parseInt(num2);
+
+    result = num1 + num2;
+
+    document.getElementById('out').innerHTML = result;
+}
+
+function minus() {
+    var num1,num2,result;
+
+    num1 = document.getElementById('n1').value;
+    num1 = parseInt(num1);
+
+    num2 = document.getElementById('n2').value;
+    num2 = parseInt(num2);
+    
+    result = num1 - num2;
+    document.getElementById('out').innerHTML = result;
+} 
+
+function multiply() {
+    var num1,num2,result;
+
+    num1 = document.getElementById('n1').value;
+    num1 = parseInt(num1);
+
+    num2 = document.getElementById('n2').value;
+    num2 = parseInt(num2);
+    
+    result = num1 * num2;
+    document.getElementById('out').innerHTML = result;
+}
+
+function share() {
+    var num1,num2,result;
+
+    num1 = document.getElementById('n1').value;
+    num1 = parseInt(num1);
+
+    num2 = document.getElementById('n2').value;
+    num2 = parseInt(num2);
+    
+    result = num1 / num2;
+    document.getElementById('out').innerHTML = result;
+}
+//Урок 11
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 55.609, lng: 38.0975 },
+    zoom: 16,
+  })};
+  //Урок 12
+  var modal = document.getElementById('myModalImg');
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+img.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+    modal.style.display = "none";
+}

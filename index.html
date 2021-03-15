@@ -170,6 +170,51 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 </div>
+<div class="module-9">
+    <span class="title">Урок 9</span>
+    <input type="text" onkeyup="myFunction()" id="myInput" placeholder="Search of names">
+    <ul id="myUL">
+        <li><a href="" class="header">A</a></li>
+        <li><a href="">Anton</a></li>
+        <li><a href="">Andrey</a></li>
+        <li><a href="" class="header">B</a></li>
+        <li><a href="">Bogdan</a></li>
+        <li><a href="">Bill</a></li>
+        <li><a href="">Boris</a></li>
+        <li><a href="" class="header">C</a></li>
+        <li><a href="">Calvin</a></li>
+        <li><a href="">Christina</a></li>
+    </ul>
+</div>
+<div class="module-10">
+    <span class="title">Урок 10</span>
+    <p>Число 1: <input type="text" id="n1"></p>
+    <p>Число 2: <input type="text" id="n2"></p>
+
+    <button onclick="plus()">+</button>
+    <button onclick="minus()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="share()">/</button>
+
+
+
+    <hr>
+    <p id="out">Ответ:</p>
+</div>
+<div class="module-11">
+    <span class="title">Урок 11</span>
+    <div id="map" style="width: 1200px; height: 400px;"></div>
+</div>
+<div class="module-12">
+    <span class="title">Урок 12</span>
+    <img src="img/workspace.jpg" alt="My workspace" id="myImg" width="300" height="200">
+    <div id="myModalImg" class="modal">
+        <span class="close" onclick="document.getElementById('myModalImg').style.display='none'">&times</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+</div>
     <script src="script.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"></script>
+
 </body>
 </html>
