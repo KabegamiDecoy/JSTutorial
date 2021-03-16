@@ -300,7 +300,7 @@ function move() {
     }
 }
 //Урок 14
-function myFunction() {
+function myFunctionSec() {
     var popup = document.getElementById('myPopup');
     popup.classList.toggle('show');
 }
