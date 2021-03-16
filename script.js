@@ -189,7 +189,7 @@ function showSlides(n) {
     dots[slideIndex-1].className+= " active";
 }
 // Урок 9
-function myFunction () {
+function myFunctionFirst() {
     var input, filter, ul, li,a,i;
     input = document.getElementById('myInput');
     filter = input.value.toUpperCase();
