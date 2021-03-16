@@ -283,3 +283,39 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
     modal.style.display = "none";
 }
+//Урок 13
+function move() {
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame () {
+        if (width>=100) {
+            clearInterval(id);
+        }
+        else{
+            width++;
+            elem.style.width = width +'%';
+            document.getElementById("label").innerHTML = width*1 + '%';
+        }
+    }
+}
+//Урок 14
+function myFunction() {
+    var popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+}
+//Урок 15
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function () {
+        this.classList.toggle("active");
+
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
+//Урок 16
+function moneyConverter(valNum) {
+    document.getElementById("outputrub").innerHTML=valNum*60;
+}
